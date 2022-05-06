@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  
 }
 
 *,
@@ -10,11 +11,15 @@ html {
 
 body {
   margin: 0;
-  font-family: "Jost", sans-serif;
-  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   background-color: white;
-  color: var(--color-dark);
+  color: var(--color-blue);
+  &.noscroll{
+    overflow: hidden;
+  }
 }
+
 
 img {
   max-width: 100%;
@@ -51,10 +56,54 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 15px;
+  max-width: 1152px;
   
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+.btn{
+  display: flex;
+  padding-left: 30px;
+  padding-right: 23px;
+  color: var(--color-blue);
+  height: 60px;
+  border-radius: 14px;
+  border: none;
+  background-color: var(--color-green);
+}
+.title {
+  color: var(--color-blue);
+  letter-spacing: 0.75px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 60px;
+}
+.title--main{
+  letter-spacing: 2.5px;
+  font-size: 72px;
+}
+.title--small{
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.35px;
+}
+.subtitle{
+  color: var(--color-gray);
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.84px;
+  font-weight: 400;
+
+}
+.subtitle--small{
+  font-size: 16px;
+}
+.link {
+  color: var(--color-blue);
+  font-size: 15px;
+  line-height: 50px;
+  font-weight: 400;
 }
