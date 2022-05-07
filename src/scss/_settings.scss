@@ -15,9 +15,6 @@ body {
   font-weight: 400;
   background-color: white;
   color: var(--color-blue);
-  &.noscroll{
-    overflow: hidden;
-  }
 }
 
 
@@ -66,14 +63,24 @@ a {
 }
 .btn{
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding-left: 30px;
   padding-right: 23px;
   color: var(--color-blue);
   height: 60px;
-  border-radius: 14px;
+  border-radius: 60px;
   border: none;
   background-color: var(--color-green);
+  cursor: pointer;
+  &__span{
+    margin-right: 20px;
+  }
+  &__arrow{
+
+  }
 }
+
 .title {
   color: var(--color-blue);
   letter-spacing: 0.75px;
@@ -106,4 +113,24 @@ a {
   font-size: 15px;
   line-height: 50px;
   font-weight: 400;
+}
+
+.list-box{
+  display: grid;
+  padding: 0;
+  grid-template-columns: repeat(3,1fr);
+  gap: 59px;
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & * {
+      text-align: center;
+      @include resets;
+    }
+    & h1{
+      margin-bottom: 0.588em;
+    }
+  }
+
 }

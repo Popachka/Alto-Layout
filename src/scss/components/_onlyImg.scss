@@ -1,0 +1,16 @@
+.onlyImg {
+    background-color: var(--color-beige);
+    position: relative;
+    &__img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        
+    }
+}
+.container {
+}
+.onlyImg-container {
+    height: 469px;
+    
+}

@@ -1,0 +1,43 @@
+.ask {
+
+    &__text {
+        text-align: center;
+        padding: 110px 0;
+        max-width: 510px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    &__title {
+        @include resets;
+    }
+
+    &__subtitle {
+        @include resets;
+        max-width: 369px;
+        font-size: 16px;
+        line-height: 26px;
+        min-height: 52px;
+        margin-top: 21px;
+        
+    }
+
+    &__img {
+        margin-left: 66px;
+    }
+}
+.container {
+}
+.ask-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.title {
+
+    &--small {}
+}
+.subtitle {
+}

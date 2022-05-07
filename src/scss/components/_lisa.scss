@@ -1,0 +1,47 @@
+.lisa {
+    padding-top: 153px;
+    padding-bottom: 136px;
+    &__story {
+        position: relative;
+        
+    }
+
+    &__img {
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__btn {
+        background-color: #EBF0F5;
+        position: absolute;
+        z-index: 100;
+        bottom: 0;
+        left: 21%;
+        margin-bottom: -25px;
+    }
+
+    &__text {
+        text-align: center;
+        margin-left: 100px;
+        padding: 53px 0;
+    }
+
+    &__title {}
+
+    &__subtitle {
+        color: #868AA2;
+        font-size: 13px;
+    }
+}
+.container {
+}
+.lisa-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.btn {
+}
+.title {
+}
+.subtitle {
+}
