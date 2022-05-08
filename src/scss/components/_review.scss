@@ -1,0 +1,42 @@
+.review {
+    padding-top: 160px;
+    &__img {}
+
+    &__text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    &__title {
+        
+        max-width: 500px;
+        margin-bottom: 2.26em;
+    }
+
+    &__stars {
+        margin-bottom: 1.4em;
+    }
+
+    &__reviews {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & img {
+            margin-left: 0.5em;
+
+        }
+        padding-bottom: 10px;
+    }
+}
+.container {
+}
+.review-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.title {
+}

@@ -1,0 +1,22 @@
+.believe {
+    padding: 56px;
+    background-color: var(--color-beige);
+    &__title {
+        max-width: 650px;
+        text-align: center; 
+        line-height: 80px;
+        margin-bottom: 54px;
+    }
+
+    &__btn {}
+}
+.container {
+}
+.believe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
