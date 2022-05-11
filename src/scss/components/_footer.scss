@@ -1,6 +1,8 @@
 .footer {
 
     &__link {
+        min-width: 50px;
+        
         &:not(:last-child){
             margin-right: 54px;
         }
@@ -13,6 +15,11 @@
         &:nth-child(5){
             align-self: flex-start;
         }
+        @media (max-width:$mobile){
+            &:not(:first-child){
+                margin-top: 30px;
+            }
+        }
     }
 
     &__img {
@@ -23,5 +30,11 @@
     display: flex;
     padding: 48px 72px 30px 72px;
     align-items: center;
+    justify-content: center;
+    @media (max-width: $mobile) {
+        flex-wrap: wrap;
+        
+
+    }
 
 }

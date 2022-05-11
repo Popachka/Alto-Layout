@@ -5,16 +5,29 @@
     &__logo {
         position: relative;
         left: 70px;
+        @media (max-width: $mobile){
+            left: 0;
+            
+        }
     }
     &__logo-link{
-        
+        @media (max-width: $mobile){
+            margin-right: 50px;
+        }   
     }
 
     &__list {
         padding-bottom: 20px;
+        @media (max-width: $mobile){
+            display: none; 
+        }
     }
 
-    &__link {}
+    &__link {
+        @media (max-width: $small){
+            margin-right: 20px;
+        }
+    }
 }
 .header-container {
     display: flex;
@@ -24,20 +37,21 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-white);
+    @media (max-width: $small){
+        padding: 18px 5px 18px 67px;
+
+    }
+    @media (max-width: $mobile){
+        
+        justify-content: space-between;
+    }
+
 }
 .burger {
 }
 .logo {
 }
-.list {
-    font-size: 15px;
-    display: flex;
-    &__item {
-        &:not(:last-child){
-            margin-right: 2em;
-        }
-    }
-}
+
 .link {
 }
 
@@ -45,6 +59,7 @@
 
 
 .hamb {
+    
     &__field {
         
         cursor: pointer;

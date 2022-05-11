@@ -1,6 +1,7 @@
 .ask {
 
     &__text {
+        margin: 0 auto;
         text-align: center;
         padding: 110px 0;
         max-width: 510px;
@@ -27,6 +28,9 @@
 
     &__img {
         margin-left: 66px;
+        @media (max-width: $medium) {
+            margin: 0 auto;
+        }
     }
 }
 .container {
@@ -34,6 +38,9 @@
 .ask-container {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    @media (max-width: $medium){
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 .title {
 

@@ -1,5 +1,13 @@
 // если вы хотите использовать sass-переменные - удалите root
 // colors
+$large: 1200px;
+$medium: 992px;
+$small: 768px;
+$mobile: 576px;
+$ultra-mobile: 375px;
+
+
+
 :root {
   --color-black: #000;
   --color-white: #ffff;

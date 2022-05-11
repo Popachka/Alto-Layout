@@ -12,6 +12,7 @@
 
     &__logo {
         margin-bottom: 2.2em;
+        align-self: flex-start;
     }
 
     &__group-list {
@@ -19,6 +20,9 @@
         justify-content: space-between;
         align-items: flex-start;
         width: 100%;
+        @media (max-width: $medium){
+            flex-direction: column;
+        }
         
     }
 
@@ -40,6 +44,9 @@
             padding: 0 5px;
             &:not(:last-child){
                 margin-right: 50px;
+                @media (max-width: $small){
+                    margin-right: 20px;
+                }
             }
         }
     }
@@ -48,8 +55,19 @@
 
     &__social {
         display: flex;
+        & li{
+            width: 20px;
+            height: 20px;
+        }
         & li:not(:last-child){
             margin-right:20px;
+        }
+        @media (max-width: $small){
+            flex-wrap: wrap;
+            & li{
+                @include resets;
+                margin-top: 20px;
+            }
         }
     }
 
@@ -62,12 +80,22 @@
         justify-content: space-between;
         align-items: center;
         padding-bottom: 32px;
+        @media (max-width: $medium){
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: start;
+            
+        }
     }
 
     &__footer-list {
         display: flex;
         & li:not(:last-child){
             margin-right: 1.19em;
+        }
+        @media (max-width: $medium){
+            flex-wrap: wrap;
+            @include resets;
         }
     }
 

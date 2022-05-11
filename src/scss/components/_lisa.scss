@@ -1,9 +1,26 @@
 .lisa {
     padding-top: 153px;
     padding-bottom: 136px;
+    @media (max-width: $mobile){
+        padding-bottom: 50px;
+    }
     &__story {
         position: relative;
-        
+        min-width: 476px;
+        max-height: 275px;
+        margin: 0 auto;
+        @media (max-width: $mobile){
+            min-width: auto;
+            max-height: none;
+            
+        }
+        @media (max-width: $mobile){
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     &__img {
@@ -18,12 +35,22 @@
         bottom: 0;
         left: 21%;
         margin-bottom: -25px;
+        @media (max-width: $mobile){
+            position: relative;
+            left: 0;
+            margin: 0;
+            margin-top: 30px;
+
+        }
     }
 
     &__text {
         text-align: center;
         margin-left: 100px;
         padding: 53px 0;
+        @media (max-width: $medium){
+            margin: 0;
+        }
     }
 
     &__title {}
@@ -38,6 +65,9 @@
 .lisa-container {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    @media (max-width: $medium){
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 .btn {
 }

@@ -1,6 +1,8 @@
 .review {
     padding-top: 160px;
-    &__img {}
+    &__img {
+        margin: 0 auto;
+    }
 
     &__text {
         text-align: center;
@@ -37,6 +39,9 @@
 .review-container {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    @media (max-width: $medium){
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 .title {
 }
